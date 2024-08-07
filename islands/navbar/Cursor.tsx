@@ -24,7 +24,7 @@ export default function Cursor(
     gsap.to(cursor.current, {
       ...props.state.value,
       autoAlpha: 1,
-      delay: 0.25,
+      duration: 0.25,
     });
   });
 
