@@ -27,7 +27,7 @@ export default function App({ Component }: PageProps) {
             </head>
             <body
                 f-client-nav
-                class="flex flex-col px-12 pt-0 pb-4 mx-auto h-full bg-zinc-50 max-w-[110rem]"
+                class="flex flex-col px-12 pt-0 pb-4 mx-auto h-full bg-zinc-50 max-w-[90vw]"
             >
                 <Header />
                 <main class="my-2 h-full">
