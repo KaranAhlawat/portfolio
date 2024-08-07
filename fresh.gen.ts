@@ -6,7 +6,9 @@ import * as $_app from "./routes/_app.tsx";
 import * as $blog from "./routes/blog.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $projects from "./routes/projects.tsx";
-import * as $Navbar from "./islands/Navbar.tsx";
+import * as $navbar_Cursor from "./islands/navbar/Cursor.tsx";
+import * as $navbar_Navbar from "./islands/navbar/Navbar.tsx";
+import * as $navbar_nav_link from "./islands/navbar/nav-link.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -17,7 +19,9 @@ const manifest = {
     "./routes/projects.tsx": $projects,
   },
   islands: {
-    "./islands/Navbar.tsx": $Navbar,
+    "./islands/navbar/Cursor.tsx": $navbar_Cursor,
+    "./islands/navbar/Navbar.tsx": $navbar_Navbar,
+    "./islands/navbar/nav-link.tsx": $navbar_nav_link,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
