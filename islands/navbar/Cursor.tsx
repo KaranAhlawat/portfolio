@@ -29,7 +29,7 @@ export default function Cursor(
   });
 
   return (
-    <li
+    <div
       ref={cursor}
       class="absolute z-0 rounded-full bg-zinc-50 h-9"
     />
