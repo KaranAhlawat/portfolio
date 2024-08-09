@@ -22,7 +22,7 @@ export default function Cursor(
     return (
         <div
             ref={cursor}
-            class="absolute z-0 rounded-full bg-zinc-50 h-9"
+            class="absolute z-0 h-10 rounded-full bg-zinc-50"
         />
     );
 }

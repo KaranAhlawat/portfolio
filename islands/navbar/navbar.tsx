@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <div
-            class="flex p-1 relative mx-auto text-lg rounded-full bg-zinc-900 text-zinc-50"
+            class="flex relative items-center p-1 mx-auto text-lg rounded-full bg-zinc-900 text-zinc-50"
             onMouseLeave={() => {
                 cursorState.value = {
                     ...cursorState.value,

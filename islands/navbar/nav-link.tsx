@@ -11,10 +11,11 @@ export default function NavLink(
     },
 ) {
     const ref = useRef<HTMLAnchorElement>(null);
+
     return (
         <a
             ref={ref}
-            class="block relative z-10 py-1 px-3 text-lg uppercase mix-blend-difference data-[current]:underline data-[current]:decoration-2 data-[current]:underline-offset-2"
+            class="block relative z-10 py-1.5 px-6 text-lg uppercase mix-blend-difference data-[current]:underline data-[current]:decoration-2 data-[current]:underline-offset-2"
             href={props.to}
             onMouseEnter={() => {
                 if (!ref.current) return;
