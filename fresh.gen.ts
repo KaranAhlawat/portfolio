@@ -6,24 +6,24 @@ import * as $_app from "./routes/_app.tsx";
 import * as $blog from "./routes/blog.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $projects from "./routes/projects.tsx";
-import * as $navbar_Cursor from "./islands/navbar/Cursor.tsx";
-import * as $navbar_Navbar from "./islands/navbar/Navbar.tsx";
+import * as $navbar_cursor from "./islands/navbar/cursor.tsx";
 import * as $navbar_nav_link from "./islands/navbar/nav-link.tsx";
+import * as $navbar_navbar from "./islands/navbar/navbar.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
-  routes: {
-    "./routes/_app.tsx": $_app,
-    "./routes/blog.tsx": $blog,
-    "./routes/index.tsx": $index,
-    "./routes/projects.tsx": $projects,
-  },
-  islands: {
-    "./islands/navbar/Cursor.tsx": $navbar_Cursor,
-    "./islands/navbar/Navbar.tsx": $navbar_Navbar,
-    "./islands/navbar/nav-link.tsx": $navbar_nav_link,
-  },
-  baseUrl: import.meta.url,
+    routes: {
+        "./routes/_app.tsx": $_app,
+        "./routes/blog.tsx": $blog,
+        "./routes/index.tsx": $index,
+        "./routes/projects.tsx": $projects,
+    },
+    islands: {
+        "./islands/navbar/cursor.tsx": $navbar_cursor,
+        "./islands/navbar/nav-link.tsx": $navbar_nav_link,
+        "./islands/navbar/navbar.tsx": $navbar_navbar,
+    },
+    baseUrl: import.meta.url,
 } satisfies Manifest;
 
 export default manifest;
